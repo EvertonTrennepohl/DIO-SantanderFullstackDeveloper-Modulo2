@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos - Flex (Atalho ou abreviação)</title>
+
+    <style>
+      .flex-container {
+        display: flex;
+        border: 1px solid black;
+        max-width: 400px;
+      }
+
+      .item {
+        background-color: brown;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        margin: 5px;
+      }
+
+      .flex-1 {
+        flex: 1;
+        /* grow = 1, shrink = 1, basis = 0 */
+      }
+
+      .flex-2{
+          flex: 2;
+          /* grow = 2, shrink = 1, basis = 0 */
+      }
+
+      h1 {
+        text-decoration: underline;
+      }
+
+      h3 {
+        margin-bottom: 5px;
+        margin-top: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex</h1>
+    <h2>
+      Pode-se atribuir valores as propriedades grow, shrink e basis utilizando
+      flex.
+    </h2>
+    <h2>
+      Os valores devem seguir a ordem das propriedades. flex: grow shrink basis
+    </h2>
+    <h2>Exemplo: flex: 1 0 auto;</h2>
+    <h2>
+      No exemplo acima grow recebeu 1, shrink recebeu 0 e basis recebeu auto.
+    </h2>
+    <h3>flex: 1; -> (grow = 1, shrink = 1, basis = 0)</h3>
+    <section class="flex-container">
+      <div class="item flex-1">A</div>
+      <div class="item flex-1">BB</div>
+      <div class="item flex-1">CCC</div>
+      <div class="item flex-1">D</div>
+      <div class="item flex-1">E</div>
+    </section>
+
+    <h3>
+      A -> flex: 1; <br />
+      B -> flex: 1; <br />
+      C -> flex: 2; <br />
+      D -> flex: 2; <br />
+      E -> flex: 1;
+    </h3>
+    <section class="flex-container">
+      <div class="item flex-1">A</div>
+      <div class="item flex-1">BB</div>
+      <div class="item flex-2">CCC</div>
+      <div class="item flex-2">D</div>
+      <div class="item flex-1">E</div>
+    </section>
+  </body>
+</html>

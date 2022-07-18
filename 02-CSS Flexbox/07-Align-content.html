@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos- Align-content</title>
+
+    <style>
+      .container {
+        height: 450px;
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid black;
+      }
+
+      .item {
+        background-color: orangered;
+        padding: 0 5px;
+        margin: 5px;
+        flex: 1;
+        text-align: center;
+        color: white;
+        border: 1px solid black;
+      }
+
+      .center {
+        align-content: center;
+      }
+
+      .flex-start{
+          align-content: flex-start;
+      }
+
+      .flex-end{
+          align-content: flex-end;
+      }
+
+      .space-around{
+          align-content: space-around;
+      }
+
+      .space-between{
+          align-content: space-between;
+      }
+
+      h1 {
+        text-decoration: underline;
+      }
+
+      h3{
+          margin-bottom: 5px;
+          margin-top: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Align Content</h1>
+    <h3>stretch (comportamento padrão)</h3>
+    <div class="container">
+      <div class="item">
+        Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis?
+      </div>
+      <div class="item">Toma um mé que o mundo vai girarzis!</div>
+      <div class="item">
+        Sapien in monti palavris qui num significa nadis i pareci latim.
+      </div>
+      <div class="item">
+        Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.
+      </div>
+      <div class="item">
+        Viva Forevis aptent taciti sociosqu ad litora torquent.
+      </div>
+      <div class="item">Casamentiss faiz malandris se pirulitá.</div>
+      <div class="item">
+        Aenean aliquam molestie leo, vitae iaculis nisl.Suco de cevadiss, é um
+        leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+      </div>
+      
+    </div>
+
+    <h3>center</h3>
+    <div class="container center">
+      <div class="item">
+        Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis?
+      </div>
+      <div class="item">Toma um mé que o mundo vai girarzis!</div>
+      <div class="item">
+        Sapien in monti palavris qui num significa nadis i pareci latim.
+      </div>
+      <div class="item">
+        Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.
+      </div>
+      <div class="item">
+        Viva Forevis aptent taciti sociosqu ad litora torquent.
+      </div>
+      <div class="item">Casamentiss faiz malandris se pirulitá.</div>
+      <div class="item">
+        Aenean aliquam molestie leo, vitae iaculis nisl.Suco de cevadiss, é um
+        leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+      </div>
+    </div>
+
+    <h3>flex-start</h3>
+    <div class="container flex-start">
+      <div class="item">
+        Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis?
+      </div>
+      <div class="item">Toma um mé que o mundo vai girarzis!</div>
+      <div class="item">
+        Sapien in monti palavris qui num significa nadis i pareci latim.
+      </div>
+      <div class="item">
+        Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.
+      </div>
+      <div class="item">
+        Viva Forevis aptent taciti sociosqu ad litora torquent.
+      </div>
+      <div class="item">Casamentiss faiz malandris se pirulitá.</div>
+      <div class="item">
+        Aenean aliquam molestie leo, vitae iaculis nisl.Suco de cevadiss, é um
+        leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+      </div>
+    </div>
+
+    <h3>flex-end</h3>
+    <div class="container flex-end">
+      <div class="item">
+        Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis?
+      </div>
+      <div class="item">Toma um mé que o mundo vai girarzis!</div>
+      <div class="item">
+        Sapien in monti palavris qui num significa nadis i pareci latim.
+      </div>
+      <div class="item">
+        Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.
+      </div>
+      <div class="item">
+        Viva Forevis aptent taciti sociosqu ad litora torquent.
+      </div>
+      <div class="item">Casamentiss faiz malandris se pirulitá.</div>
+      <div class="item">
+        Aenean aliquam molestie leo, vitae iaculis nisl.Suco de cevadiss, é um
+        leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+      </div>
+    </div>
+
+    <h3>space-around</h3>
+    <div class="container space-around">
+      <div class="item">
+        Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis?
+      </div>
+      <div class="item">Toma um mé que o mundo vai girarzis!</div>
+      <div class="item">
+        Sapien in monti palavris qui num significa nadis i pareci latim.
+      </div>
+      <div class="item">
+        Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.
+      </div>
+      <div class="item">
+        Viva Forevis aptent taciti sociosqu ad litora torquent.
+      </div>
+      <div class="item">Casamentiss faiz malandris se pirulitá.</div>
+      <div class="item">
+        Aenean aliquam molestie leo, vitae iaculis nisl.Suco de cevadiss, é um
+        leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+      </div>
+    </div>
+
+    <h3>space-between</h3>
+    <div class="container space-between">
+      <div class="item">
+        Mussum Ipsum, cacilds vidis litro abertis. Si u mundo tá muito paradis?
+      </div>
+      <div class="item">Toma um mé que o mundo vai girarzis!</div>
+      <div class="item">
+        Sapien in monti palavris qui num significa nadis i pareci latim.
+      </div>
+      <div class="item">
+        Mais vale um bebadis conhecidiss, que um alcoolatra anonimis.
+      </div>
+      <div class="item">
+        Viva Forevis aptent taciti sociosqu ad litora torquent.
+      </div>
+      <div class="item">Casamentiss faiz malandris se pirulitá.</div>
+      <div class="item">
+        Aenean aliquam molestie leo, vitae iaculis nisl.Suco de cevadiss, é um
+        leite divinis, qui tem lupuliz, matis, aguis e fermentis.
+      </div>
+    </div>
+  </body>
+</html>
