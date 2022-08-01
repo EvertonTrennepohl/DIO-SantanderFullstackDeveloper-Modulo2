@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript - Solução Desafio 2</title>
+</head>
+<body>
+    <h2>Solução Desafio 2</h2>
+    <br />
+    <h3>Código do arquivo desafio2.ts</h3>
+    <p><br>enum Profissao {<br>
+        Atriz,<br>
+        Padeiro<br>
+    }<br>
+    <br>
+    interface Pessoa {<br>
+        nome: string,<br />
+        idade: number,<br />
+        profissao: Profissao<br />
+    }<br />
+    <br />
+    let pessoa1 = {} as Pessoa;<br />
+    pessoa1.nome = "maria";<br />
+    pessoa1.idade = 29;<br />
+    pessoa1.profissao = Profissao.Atriz;<br />
+    <br />
+    let pessoa2 = {} as Pessoa;<br />
+    pessoa2.nome = "roberto";<br />
+    pessoa2.idade = 19;<br />
+    pessoa2.profissao = Profissao.Padeiro;<br />
+    <br />
+    let pessoa3 = {<br />
+        nome: "laura",<br />
+        idade: "32",<br />
+        profissao: Profissao.Atriz<br />
+    };<br />
+    <br />
+    let pessoa4 : {nome: string, idade: number, profissao: Profissao} = <br />
+    {<br />
+        nome: "Carlos", <br />
+        idade: 19, <br />
+        profissao: Profissao.Padeiro<br />
+    }</p>
+    <p><br />* Os objetos podem ser visualizados no console.</p>
+    <a href="/index.html">Voltar para página inicial</a>
+    <script src="/dist/desafio2/desafio2.js" defer></script>
+</body>
+</html>
